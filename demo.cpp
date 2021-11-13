@@ -6,24 +6,22 @@ using namespace std;
 
 int main() {
 
-    unordered_set<char> nfaAlphabet{'a','b','c',' '};
+    unordered_set<char> nfaAlphabet{'a','b',' '};
     NFA nfa;
     nfa.setAlphabet(nfaAlphabet);
 
     nfa.addState(0);
     nfa.addState(1);
     nfa.addState(2);
-    nfa.addState(3);
+
 
     nfa.setStartState(0);
-    nfa.setAcceptState(3);
+    nfa.setAcceptState(2);
 
     nfa.addTransition(0, 'a', 1);
     nfa.addTransition(1, 'b', 2);
-    nfa.addTransition(2, 'c', 3);
 
     nfa.addTransition(0, ' ', 1);
-    nfa.addTransition(2, ' ', 3);
 
     cout << "***** The NFA *****" << endl;
     cout << nfa.toString() << endl;
@@ -31,6 +29,7 @@ int main() {
     cout << "***** The DFA *****" << endl;
     DFA* dfa = nfa.convertToDFA();
     cout << dfa->toString() << endl;
+
 
     cout << "***** The minimized DFA *****" << endl;
     dfa->minimize();
@@ -44,7 +43,10 @@ int main() {
     DFA* intersect = dfa->intersect(comp);
     cout << intersect->toString() << endl;
 
+
     intersect->minimize();
+    cout << "*** Minimization of the intersection ***" << endl;
+    cout << intersect->toString() << endl;
 
     cout << "**** Is the intersect empty? ****" << endl;
     string answer;
@@ -70,6 +72,9 @@ int main() {
     }
 
     cout << answer1 << endl;
+
+
+
 
     delete dfa;
     delete comp;
