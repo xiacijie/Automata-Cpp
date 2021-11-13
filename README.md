@@ -1,7 +1,7 @@
 # Automata
-An implementation of automata (Nondeterminsitic Finite Automata, Determinsitic Finite Automata) in C++
+An implementation of Finite Automata (Nondeterminstic Finite Automata, Determinstic Finite Automata) in C++
 
-Serveral Automtata Algorithms are implemented, including:
+Several Automata Algorithms are implemented, including:
 
 1. NFA to DFA conversion
 2. DFA intersection
