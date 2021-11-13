@@ -44,6 +44,8 @@ int main() {
     DFA* intersect = dfa->intersect(comp);
     cout << intersect->toString() << endl;
 
+    intersect->minimize();
+
     cout << "**** Is the intersect empty? ****" << endl;
     string answer;
 
@@ -68,6 +70,10 @@ int main() {
     }
 
     cout << answer1 << endl;
+
+    delete dfa;
+    delete comp;
+    delete intersect;
 
     return 0;
 }
