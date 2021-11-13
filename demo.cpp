@@ -1,5 +1,5 @@
-#include "DFA.h"
-#include "NFA.h"
+#include "src/DFA.h"
+#include "src/NFA.h"
 #include <iostream>
 
 using namespace std;

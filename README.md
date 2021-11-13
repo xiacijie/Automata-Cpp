@@ -15,4 +15,4 @@ Several Automata Algorithms are implemented, including:
 
 1. Clone this repo
 2. `make`
-3. `./test`
+3. `./demo`

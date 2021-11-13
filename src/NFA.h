@@ -1,6 +1,6 @@
 #pragma once
-#include "FiniteAutomataBase.h"
-#include "DFA.h"
+#include "src/FiniteAutomataBase.h"
+#include "src/DFA.h"
 #include <set>
 #include <map>
 #include <unordered_set>
