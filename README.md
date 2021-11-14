@@ -10,6 +10,7 @@ Several Automata Algorithms are implemented, including:
 5. DFA unreachable states removal
 6. DFA emptiness check 
 7. DFA universality check
+8. DFA shuffles
 
 ## How to run the demo
 
