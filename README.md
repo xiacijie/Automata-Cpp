@@ -11,6 +11,8 @@ Several Automata Algorithms are implemented, including:
 6. DFA emptiness check 
 7. DFA universality check
 8. DFA shuffles
+9. NFA shuffles
+10. NFA concatenation
 
 ## How to run the demo
 
